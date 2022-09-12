@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">JarvisDoeSangue</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="app_title">Doe Sangue, Doe Vida</string>
+    <string name="btn_login">Login Doador</string>
+    <string name="btn_registration">Cadastro Doador</string>
+    <string name="btn_center_registration">Cadastro Centro de Coleta</string>
+    <string name="complete_name">Nome Completo</string>
+    <string name="email">E-mail</string>
+    <string name="id">CPF</string>
+    <string name="birthdate">Data de Nascimento</string>
+    <string name="marital_status">Estado Civil</string>
+    <string name="weight">Peso</string>
+    <string name="height">Altura</string>
+    <string name="blood_type">Tipo Sanguíneo</string>
+    <string name="password">Senha</string>
+    <string name="btn_next">Próximo</string>
+    <string name="telephone">Telefone</string>
+    <string name="zip_code">CEP</string>
+    <string name="street">Logradouro</string>
+    <string name="number">Número</string>
+    <string name="additional_data">Complemento (Opcional)</string>
+    <string name="neighbourhood">Bairro</string>
+    <string name="state">Estado</string>
+    <string name="city">Cidade</string>
+    <string name="register">Salvar</string>
+
+
+</resources>
