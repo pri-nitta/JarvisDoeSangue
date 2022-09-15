@@ -2,17 +2,19 @@ package com.jarvis.jarvisdoesangue
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import androidx.databinding.DataBindingUtil
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.jarvis.jarvisdoesangue.databinding.FragmentAddressBinding
-import com.jarvis.jarvisdoesangue.model.Cep
+import com.jarvis.jarvisdoesangue.model.CEP
 import retrofit2.Call
 import retrofit2.Response
-import javax.security.auth.callback.Callback
+import retrofit2.Callback
+
 
 class AddressFragment : Fragment() {
 
@@ -34,37 +36,35 @@ class AddressFragment : Fragment() {
             view?.findNavController()?.navigate(R.id.action_addressFragment_to_confirmationFragment)
         }
         binding.apply {
-            val cep = zipCodeField.text.toString()
-            if (cep.isNotEmpty()){
-                buscarCep(cep)
+            if (zipCodeField.text.toString().isNotEmpty() && zipCodeField.length() == 8){
+                getAddress()
             }else{
                 zipCode.error = "Digite um CEP válido"
             }
         }
     }
 
-    private fun buscarCep(cep: String){
-        val retrofitClient = Network.RetrofitConfig("https://viacep.com.br/ws/")
-        val servico = retrofitClient.create(CepService::class.java)
-        val chamada = servico.buscarCEP(cep)
-        chamada.enqueue(
-            object: Callback<Cep>, retrofit2.Callback<Cep> {
-                override fun onResponse(call: Call<Cep>, response: Response<Cep>) {
-                    val endereco = response.body()
-                    endereco?.let {
-                            binding.apply{
-                                streetField.setText(it.rua)
-                                neighbourhoodField.setText(it.bairro)
-                                cityField.setText(it.cidade)
-                                stateField.setText(it.uf)
-                            }
+
+    private fun getAddress(){
+        val call = RetrofitFactory().retrofitService().getCEP(binding.zipCodeField.text.toString())
+        call.enqueue(object : Callback<CEP>{
+            override fun onResponse(call: Call<CEP>, response: Response<CEP>){
+                response.body()?.let {
+                    Toast.makeText(context,"Endereço encontrado", Toast.LENGTH_LONG).show()
+                    binding.apply{
+                        streetField.setText(it.rua)
+                        neighbourhoodField.setText(it.bairro)
+                        cityField.setText(it.cidade)
+                        stateField.setText(it.uf)
                     }
-                }
-                override fun onFailure(call: Call<Cep>, t: Throwable) {
-                    Log.d("TAG", "Não encontrado")
-                }
+                }?: Toast.makeText(context,"Endereço não localizado", Toast.LENGTH_LONG).show()
             }
-        )
+            override fun onFailure(call: Call<CEP>, t: Throwable) {
+                t.message?.let { it1 -> Log.e("Erro", it1) }
+            }
+
+        })
+
     }
 
 

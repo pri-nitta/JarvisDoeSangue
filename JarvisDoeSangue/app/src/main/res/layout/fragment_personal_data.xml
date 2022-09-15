@@ -62,8 +62,7 @@
                         android:layout_height="match_parent"
                         android:hint="@string/complete_name"
                         android:fontFamily="@font/coolvetica_rg"
-                        android:inputType="number"
-                        android:text="@={model.zipCodeCommercialOb}" />
+                        android:inputType="number" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -84,8 +83,7 @@
                         android:layout_height="match_parent"
                         android:hint="@string/email"
                         android:fontFamily="@font/coolvetica_rg"
-                        android:inputType="number"
-                        android:text="@={model.zipCodeCommercialOb}" />
+                        android:inputType="number" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -105,8 +103,7 @@
                         android:layout_height="match_parent"
                         android:hint="@string/id"
                         android:inputType="number"
-                        android:fontFamily="@font/coolvetica_rg"
-                        android:text="@={model.zipCodeCommercialOb}" />
+                        android:fontFamily="@font/coolvetica_rg" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -126,8 +123,7 @@
                         android:layout_height="match_parent"
                         android:hint="@string/birthdate"
                         android:fontFamily="@font/coolvetica_rg"
-                        android:inputType="number"
-                        android:text="@={model.zipCodeCommercialOb}" />
+                        android:inputType="number" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -147,8 +143,7 @@
                         android:layout_height="match_parent"
                         android:hint="@string/marital_status"
                         android:fontFamily="@font/coolvetica_rg"
-                        android:inputType="number"
-                        android:text="@={model.zipCodeCommercialOb}" />
+                        android:inputType="number" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -168,8 +163,7 @@
                         android:layout_height="match_parent"
                         android:hint="@string/weight"
                         android:fontFamily="@font/coolvetica_rg"
-                        android:inputType="number"
-                        android:text="@={model.zipCodeCommercialOb}" />
+                        android:inputType="number" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -189,8 +183,7 @@
                         android:layout_height="match_parent"
                         android:hint="@string/height"
                         android:fontFamily="@font/coolvetica_rg"
-                        android:inputType="number"
-                        android:text="@={model.zipCodeCommercialOb}" />
+                        android:inputType="number" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -210,8 +203,7 @@
                         android:layout_height="match_parent"
                         android:hint="@string/blood_type"
                         android:fontFamily="@font/coolvetica_rg"
-                        android:inputType="number"
-                        android:text="@={model.zipCodeCommercialOb}" />
+                        android:inputType="number" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -231,8 +223,7 @@
                         android:layout_height="match_parent"
                         android:hint="@string/password"
                         android:fontFamily="@font/coolvetica_rg"
-                        android:inputType="number"
-                        android:text="@={model.zipCodeCommercialOb}" />
+                        android:inputType="number" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
