@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/registration_nav_graph"
-    app:startDestination="@id/addressFragment">
+    app:startDestination="@id/menuFragment">
 
     <fragment
         android:id="@+id/addressFragment"
         android:name="com.jarvis.jarvisdoesangue.AddressFragment"
         android:label="fragment_address"
-        tools:layout="@layout/fragment_address" >
+        tools:layout="@layout/fragment_address">
         <action
             android:id="@+id/action_addressFragment_to_confirmationFragment"
             app:destination="@id/confirmationFragment" />
@@ -18,7 +18,7 @@
         android:id="@+id/confirmationFragment"
         android:name="com.jarvis.jarvisdoesangue.ConfirmationFragment"
         android:label="fragment_confirmation"
-        tools:layout="@layout/fragment_confirmation" >
+        tools:layout="@layout/fragment_confirmation">
         <action
             android:id="@+id/action_confirmationFragment_to_personalDataFragment"
             app:destination="@id/personalDataFragment" />
@@ -27,7 +27,7 @@
         android:id="@+id/menuFragment"
         android:name="com.jarvis.jarvisdoesangue.MenuFragment"
         android:label="fragment_menu"
-        tools:layout="@layout/fragment_menu" >
+        tools:layout="@layout/fragment_menu">
         <action
             android:id="@+id/action_menuFragment_to_personalDataFragment"
             app:destination="@id/personalDataFragment" />
@@ -36,7 +36,7 @@
         android:id="@+id/personalDataFragment"
         android:name="com.jarvis.jarvisdoesangue.PersonalDataFragment"
         android:label="fragment_personal_data"
-        tools:layout="@layout/fragment_personal_data" >
+        tools:layout="@layout/fragment_personal_data">
         <action
             android:id="@+id/action_personalDataFragment_to_addressFragment"
             app:destination="@id/addressFragment" />

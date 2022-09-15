@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.jarvis.jarvisdoesangue.databinding.FragmentPersonalDataBinding
 
 class PersonalDataFragment : Fragment() {
@@ -19,7 +20,14 @@ class PersonalDataFragment : Fragment() {
         binding = DataBindingUtil.inflate(
             inflater,R.layout.fragment_personal_data, container, false)
 
+        configureComponents()
         return binding.root
+    }
+
+    private fun configureComponents(){
+        binding.btnNext.setOnClickListener{
+            it.findNavController().navigate(R.id.action_personalDataFragment_to_addressFragment)
+        }
     }
 
 }

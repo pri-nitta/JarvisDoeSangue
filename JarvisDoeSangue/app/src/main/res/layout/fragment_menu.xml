@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MenuFragment">
 
@@ -9,38 +8,51 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/purple_200"
-            android:gravity="center"
             android:paddingVertical="16dp"
-            android:text="@string/app_title"
-            android:textColor="@color/white"
-            android:fontFamily="@font/dk_longreach"
-            android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/doacao_de_sangue"
-            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-            android:layout_marginStart="75dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dk_longreach"
+                android:gravity="center"
+                android:text="@string/app_title"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/doacao_de_sangue"
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         <Button
             android:id="@+id/button_first"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="32dp"
-            android:paddingVertical="24dp"
-            android:fontFamily="@font/coolvetica_rg"
-            android:text="@string/btn_login"
             android:backgroundTint="@color/gray"
+            android:fontFamily="@font/coolvetica_rg"
+            android:paddingVertical="24dp"
+            android:text="@string/btn_login"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/button_second"
             app:layout_constraintEnd_toEndOf="@+id/button_second"
             app:layout_constraintStart_toStartOf="@+id/button_second"
@@ -53,10 +65,11 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="32dp"
-            android:paddingVertical="24dp"
-            android:fontFamily="@font/coolvetica_rg"
-            android:text="@string/btn_registration"
             android:backgroundTint="@color/gray"
+            android:fontFamily="@font/coolvetica_rg"
+            android:paddingVertical="24dp"
+            android:text="@string/btn_registration"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/button_third"
             app:layout_constraintEnd_toEndOf="@+id/button_third"
             app:layout_constraintStart_toStartOf="@+id/button_third"
@@ -68,10 +81,11 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="32dp"
-            android:paddingVertical="24dp"
             android:backgroundTint="@color/gray"
             android:fontFamily="@font/coolvetica_rg"
+            android:paddingVertical="24dp"
             android:text="@string/btn_center_registration"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

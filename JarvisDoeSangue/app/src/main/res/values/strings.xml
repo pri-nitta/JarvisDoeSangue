@@ -26,6 +26,8 @@
     <string name="state">Estado</string>
     <string name="city">Cidade</string>
     <string name="register">Salvar</string>
+    <string name="btn_edit">Editar</string>
+    <string name="btn_menu">Menu</string>
 
 
 </resources>

@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         if (savedInstanceState == null) {
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
-                add<MenuFragment>(R.id.menuFragment)
+                add<MenuFragment>(R.id.fragment_container_view)
             }
         }
     }

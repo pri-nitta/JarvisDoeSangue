@@ -4,9 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
+import androidx.navigation.Navigation
 import com.jarvis.jarvisdoesangue.databinding.FragmentMenuBinding
 
 class MenuFragment : Fragment() {
@@ -25,9 +26,12 @@ class MenuFragment : Fragment() {
 
 
     private fun configureComponents() {
-        binding.buttonSecond.setOnClickListener {
-            view?.findNavController()?.navigate(R.id.action_menuFragment_to_personalDataFragment)
+        binding.buttonSecond.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_menuFragment_to_personalDataFragment))
+        binding.buttonFirst.setOnClickListener {
+            Toast.makeText(context,"Futuramente implementaremos! :)", Toast.LENGTH_SHORT ).show()
         }
-
+        binding.buttonThird.setOnClickListener {
+            Toast.makeText(context,"Futuramente implementaremos! :)", Toast.LENGTH_SHORT ).show()
+        }
     }
 }

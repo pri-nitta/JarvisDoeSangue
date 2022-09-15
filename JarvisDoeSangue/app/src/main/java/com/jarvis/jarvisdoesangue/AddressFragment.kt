@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.widget.doAfterTextChanged
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
@@ -36,10 +37,13 @@ class AddressFragment : Fragment() {
             view?.findNavController()?.navigate(R.id.action_addressFragment_to_confirmationFragment)
         }
         binding.apply {
-            if (zipCodeField.text.toString().isNotEmpty() && zipCodeField.length() == 8){
-                getAddress()
-            }else{
-                zipCode.error = "Digite um CEP válido"
+
+            zipCodeField.doAfterTextChanged {
+                if (!zipCodeField.text.isNullOrEmpty()){
+                    if (zipCodeField.text?.length == 8){
+                        getAddress()
+                    }
+                }
             }
         }
     }
