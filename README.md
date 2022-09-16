@@ -1,4 +1,4 @@
-# Project created for FIAP graduation course evaluation
+# Project created for FIAP graduation course evaluation 🩸
 
 Implemented features:
 1) Data Binding
@@ -6,3 +6,5 @@ Implemented features:
 3) Shared Preferences
 4) Retrofit
 5) Fragments with constraint layout
+
+This simulates a user registration for blood donation app.
