@@ -40,6 +40,7 @@ class ConfirmationFragment : Fragment() {
 
     private fun persistenceData(){
         val personalDataPersistence = activity?.getSharedPreferences("personalData", Context.MODE_PRIVATE)
+        val addressPersistence = activity?.getSharedPreferences("address", Context.MODE_PRIVATE)
 
         binding.apply {
             nameData.text = personalDataPersistence?.getString("nome", "")
@@ -50,6 +51,16 @@ class ConfirmationFragment : Fragment() {
             weightData.text = personalDataPersistence?.getString("peso", "")
             heightData.text = personalDataPersistence?.getString("altura", "")
             bloodTypeData.text = personalDataPersistence?.getString("tipoSanguineo", "")
+
+            telephoneData.text = addressPersistence?.getString("telefone", "")
+            zipcodeData.text = addressPersistence?.getString("cep", "")
+            streetData.text = addressPersistence?.getString("logradouro", "")
+            numberData.text = addressPersistence?.getString("numero", "")
+            additionalDataData.text = addressPersistence?.getString("complemento", "")
+            neighbourhoodData.text = addressPersistence?.getString("bairro", "")
+            cityData.text = addressPersistence?.getString("cidade", "")
+            stateData.text = addressPersistence?.getString("estado", "")
+
         }
     }
 

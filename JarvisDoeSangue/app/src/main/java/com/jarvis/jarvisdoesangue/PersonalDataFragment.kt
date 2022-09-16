@@ -46,7 +46,7 @@ class PersonalDataFragment : Fragment() {
             editor?.putString("tipoSanguineo", binding.bloodTypeField.text.toString())
             editor?.apply()
 
-            Toast.makeText(context, "Salvo com sucesso", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, getString(R.string.personal_data_register), Toast.LENGTH_SHORT).show()
         }
 
 

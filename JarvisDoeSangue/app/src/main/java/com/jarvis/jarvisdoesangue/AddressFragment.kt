@@ -1,5 +1,6 @@
 package com.jarvis.jarvisdoesangue
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -36,6 +37,21 @@ class AddressFragment : Fragment() {
     private fun configureComponents(){
         binding.btnRegister.setOnClickListener {
             view?.findNavController()?.navigate(R.id.action_addressFragment_to_confirmationFragment)
+
+            val addressPersistence = activity?.getSharedPreferences("address", Context.MODE_PRIVATE)
+            val editor = addressPersistence?.edit()
+
+            editor?.putString("telefone", binding.telephoneField.text.toString())
+            editor?.putString("cep", binding.zipCodeField.text.toString())
+            editor?.putString("logradouro", binding.streetField.text.toString())
+            editor?.putString("numero", binding.numberField.text.toString())
+            editor?.putString("complemento", binding.additionalDataField.text.toString())
+            editor?.putString("bairro", binding.neighbourhoodField.text.toString())
+            editor?.putString("cidade", binding.cityField.text.toString())
+            editor?.putString("estado", binding.stateField.text.toString())
+            editor?.apply()
+
+            Toast.makeText(context, getString(R.string.address_register), Toast.LENGTH_SHORT).show()
         }
         binding.apply {
 

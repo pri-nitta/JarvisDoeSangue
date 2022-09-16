@@ -39,6 +39,16 @@
     <string name="cpf_title">CPF:</string>
     <string name="personal_data">Dados pessoais</string>
     <string name="address_title">Endereço</string>
+    <string name="telephone_title">Telefone:</string>
+    <string name="zip_code_title">CEP:</string>
+    <string name="street_title">Logradouro:</string>
+    <string name="number_title">Número:</string>
+    <string name="additional_data_title">Complemento:</string>
+    <string name="neighbourhood_title">Bairro:</string>
+    <string name="city_title">Cidade:</string>
+    <string name="state_title">Estado:</string>
+    <string name="address_register">Endereço cadastrado!</string>
+    <string name="personal_data_register">Dados pessoais cadastrados!</string>
 
 
 </resources>

@@ -266,9 +266,9 @@
                     android:id="@+id/telephone_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="16dp"
                     android:fontFamily="@font/coolvetica_rg"
-                    android:text="@string/blood_title"
+                    android:text="@string/telephone_title"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/address" />
@@ -280,7 +280,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
                     app:layout_constraintTop_toTopOf="@id/telephone_title"
-                    tools:text="A+" />
+                    tools:text="5555555555" />
 
                 <TextView
                     android:id="@+id/zipcode_title"
@@ -288,7 +288,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/coolvetica_rg"
-                    android:text="@string/blood_title"
+                    android:text="@string/zip_code_title"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/telephone_title" />
@@ -300,7 +300,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
                     app:layout_constraintTop_toTopOf="@id/zipcode_title"
-                    tools:text="A+" />
+                    tools:text="04040040" />
 
                 <TextView
                     android:id="@+id/street_title"
@@ -308,7 +308,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/coolvetica_rg"
-                    android:text="@string/blood_title"
+                    android:text="@string/street_title"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/zipcode_title" />
@@ -320,7 +320,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
                     app:layout_constraintTop_toTopOf="@id/street_title"
-                    tools:text="A+" />
+                    tools:text="Rua ABC" />
 
                 <TextView
                     android:id="@+id/number_title"
@@ -328,7 +328,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/coolvetica_rg"
-                    android:text="@string/blood_title"
+                    android:text="@string/number_title"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/street_title" />
@@ -340,7 +340,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
                     app:layout_constraintTop_toTopOf="@id/number_title"
-                    tools:text="A+" />
+                    tools:text="123" />
 
                 <TextView
                     android:id="@+id/additional_data_title"
@@ -348,7 +348,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/coolvetica_rg"
-                    android:text="@string/blood_title"
+                    android:text="@string/additional_data_title"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/number_title" />
@@ -360,7 +360,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
                     app:layout_constraintTop_toTopOf="@id/additional_data_title"
-                    tools:text="A+" />
+                    tools:text="apto 456" />
 
                 <TextView
                     android:id="@+id/neighbourhood_title"
@@ -368,7 +368,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/coolvetica_rg"
-                    android:text="@string/blood_title"
+                    android:text="@string/neighbourhood_title"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/additional_data_title" />
@@ -380,7 +380,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
                     app:layout_constraintTop_toTopOf="@id/neighbourhood_title"
-                    tools:text="A+" />
+                    tools:text="XPTO" />
 
                 <TextView
                     android:id="@+id/city_title"
@@ -388,7 +388,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/coolvetica_rg"
-                    android:text="@string/blood_title"
+                    android:text="@string/city_title"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/neighbourhood_title" />
@@ -400,7 +400,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
                     app:layout_constraintTop_toTopOf="@id/city_title"
-                    tools:text="A+" />
+                    tools:text="DEFG" />
 
                 <TextView
                     android:id="@+id/state_title"
@@ -408,7 +408,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/coolvetica_rg"
-                    android:text="@string/blood_title"
+                    android:text="@string/state_title"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/city_title" />
@@ -420,13 +420,14 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline2"
                     app:layout_constraintTop_toTopOf="@id/state_title"
-                    tools:text="A+" />
+                    tools:text="HJ" />
 
 
                 <Button
                     android:id="@+id/btn_edit"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
                     android:layout_marginEnd="14dp"
                     android:layout_marginBottom="32dp"
                     android:backgroundTint="@color/gray"
