@@ -1,4 +1,4 @@
-package com.jarvis.jarvisdoesangue
+package com.jarvis.jarvisdoesangue.API
 
 import com.jarvis.jarvisdoesangue.model.CEP
 import retrofit2.Call

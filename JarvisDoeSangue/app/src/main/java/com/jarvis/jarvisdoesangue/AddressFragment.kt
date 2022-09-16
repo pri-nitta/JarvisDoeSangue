@@ -10,6 +10,7 @@ import androidx.core.widget.doAfterTextChanged
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import com.jarvis.jarvisdoesangue.API.RetrofitFactory
 import com.jarvis.jarvisdoesangue.databinding.FragmentAddressBinding
 import com.jarvis.jarvisdoesangue.model.CEP
 import retrofit2.Call

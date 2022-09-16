@@ -28,6 +28,17 @@
     <string name="register">Salvar</string>
     <string name="btn_edit">Editar</string>
     <string name="btn_menu">Menu</string>
+    <string name="confirmation_title">Revise seus dados</string>
+    <string name="name_title">Nome:</string>
+    <string name="email_title">Email:</string>
+    <string name="birthday_title">Data de nascimento:</string>
+    <string name="marital_title">Estado Civil:</string>
+    <string name="height_title">Altura:</string>
+    <string name="weight_title">Peso:</string>
+    <string name="blood_title">Tipo sanguíneo:</string>
+    <string name="cpf_title">CPF:</string>
+    <string name="personal_data">Dados pessoais</string>
+    <string name="address_title">Endereço</string>
 
 
 </resources>

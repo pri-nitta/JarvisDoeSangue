@@ -10,6 +10,7 @@
         android:name="com.jarvis.jarvisdoesangue.AddressFragment"
         android:label="fragment_address"
         tools:layout="@layout/fragment_address">
+
         <action
             android:id="@+id/action_addressFragment_to_confirmationFragment"
             app:destination="@id/confirmationFragment" />
@@ -19,9 +20,13 @@
         android:name="com.jarvis.jarvisdoesangue.ConfirmationFragment"
         android:label="fragment_confirmation"
         tools:layout="@layout/fragment_confirmation">
+
         <action
             android:id="@+id/action_confirmationFragment_to_personalDataFragment"
             app:destination="@id/personalDataFragment" />
+        <action
+            android:id="@+id/action_confirmationFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
     </fragment>
     <fragment
         android:id="@+id/menuFragment"
@@ -37,6 +42,7 @@
         android:name="com.jarvis.jarvisdoesangue.PersonalDataFragment"
         android:label="fragment_personal_data"
         tools:layout="@layout/fragment_personal_data">
+
         <action
             android:id="@+id/action_personalDataFragment_to_addressFragment"
             app:destination="@id/addressFragment" />
