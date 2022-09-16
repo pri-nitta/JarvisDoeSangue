@@ -1,4 +1,4 @@
-**Project created for FIAP graduation course evaluation**
+# Project created for FIAP graduation course evaluation
 
 Implemented features:
 1) Data Binding
